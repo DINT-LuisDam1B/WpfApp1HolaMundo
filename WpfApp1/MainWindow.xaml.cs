@@ -33,5 +33,11 @@ namespace WpfApp1
         {
             SaludoTextBlock.Text = "Hola " + NombreTextBox.Text;
         }
+
+        private void LimpiarButton_Click(object sender, RoutedEventArgs e)
+        {
+            NombreTextBox.Text = "";
+            SaludoTextBlock.Text = "Hola Mundo";
+        }
     }
 }
