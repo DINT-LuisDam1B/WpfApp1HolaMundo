@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Hola Mundo" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="SaludoTextBlock" HorizontalAlignment="Left" Margin="173,68,0,0" TextWrapping="Wrap" Text="HolaMundoo!!!" VerticalAlignment="Top" Height="105" Width="500" FontSize="72">
+        <TextBlock x:Name="SaludoTextBlock" HorizontalAlignment="Left" Margin="173,68,0,0" TextWrapping="Wrap" Text="HolaMundoo" VerticalAlignment="Top" Height="105" Width="500" FontSize="72">
             <TextBlock.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
