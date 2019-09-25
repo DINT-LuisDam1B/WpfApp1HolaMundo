@@ -27,7 +27,7 @@ namespace WpfApp1
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-                    }
+        }
 
         private void AceptarButton_Click(object sender, RoutedEventArgs e)
         {

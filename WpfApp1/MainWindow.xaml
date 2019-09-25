@@ -5,9 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Hola Mundo" Height="450" Width="800">
+        Title="Hola Mundo" Height="1321.875" Width="2853.125" Icon="32.ico">
     <Grid>
-        <TextBlock x:Name="SaludoTextBlock" HorizontalAlignment="Left" Margin="173,68,0,0" TextWrapping="Wrap" Text="HolaMundoo" VerticalAlignment="Top" Height="105" Width="500" FontSize="72">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="274*"/>
+            <ColumnDefinition Width="91*"/>
+            <ColumnDefinition Width="807*"/>
+            <ColumnDefinition Width="1673*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="SaludoTextBlock" HorizontalAlignment="Left" Margin="567,95,0,0" TextWrapping="Wrap" Text="HolaMundoo" VerticalAlignment="Top" Height="166" Width="1073" FontSize="72" Grid.Column="2" Grid.ColumnSpan="2">
             <TextBlock.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -15,10 +21,10 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
-        <TextBlock x:Name="NombreTextBlock" HorizontalAlignment="Left" Margin="173,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="113"><Run Text="Nombre:"/><LineBreak/><Run/></TextBlock>
-        <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Height="23" Margin="173,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" TextChanged="TextBox_TextChanged"/>
-        <Button x:Name="AceptarButton" Content="Aceptar" HorizontalAlignment="Left" Margin="431,199,0,0" VerticalAlignment="Top" Width="75" Click="AceptarButton_Click"/>
-        <Button x:Name="LimpiarButton" Content="Limpiar" HorizontalAlignment="Left" Margin="552,199,0,0" VerticalAlignment="Top" Width="75" Click="LimpiarButton_Click"/>
+        <TextBlock x:Name="NombreTextBlock" HorizontalAlignment="Left" Margin="567,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="113" Grid.Column="2"><Run Text="Nombre:"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Height="23" Margin="567,367,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" TextChanged="TextBox_TextChanged" Grid.Column="2"/>
+        <Button x:Name="AceptarButton" Content="Aceptar" HorizontalAlignment="Left" Margin="732,478,0,0" VerticalAlignment="Top" Width="75" Click="AceptarButton_Click" Grid.Column="2"/>
+        <Button x:Name="LimpiarButton" Content="Limpiar" HorizontalAlignment="Left" Margin="538,493,0,0" VerticalAlignment="Top" Width="75" Click="LimpiarButton_Click" Grid.Column="3"/>
 
     </Grid>
 </Window>
